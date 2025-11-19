@@ -61,7 +61,7 @@ class MyHashMap {
             return;
         }
         Node prev = find(storage[idx], key);
-        if(prev.next==null) return; //last node to be deleted
+        if(prev.next==null) return; //curr doest not exist then simple return
         //to delete in middle
         Node curr = prev.next;
         prev.next = prev.next.next;
